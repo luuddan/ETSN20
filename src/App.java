@@ -8,9 +8,6 @@ public class App {
         String searchTerm = sc.nextLine();
         System.out.print("Enter filename: ");
         String fileName = sc.nextLine();
-
-        ArrayList<String> stringArray = new ArrayList<String>();
-
         // read file demo.txt
         try {
             File myObj = new File(fileName + ".txt");
