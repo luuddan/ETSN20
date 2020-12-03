@@ -15,20 +15,21 @@ public class App {
         try {
             File myObj = new File(fileName + ".txt");
             Scanner myReader = new Scanner(myObj);
-            int line = 1;
+            int lineCount = 1;
             while (myReader.hasNextLine()) {
                 String line = myReader.nextLine();
                 String words[] = line.split(" ");
                 for (int k = 0; k < words.length; k++) {
                     if (searchTerm.equals(words[k].toLowerCase()))
-                        System.out.println("Found on line: " + );
+                        System.out.println("Found on line: " + lineCount);
                 };
-                line++;
+                lineCount += lineCount;
             };
             myReader.close();
         } catch (FileNotFoundException e) {
             System.out.println("An error occurred.");
             e.printStackTrace();
         }
+        sc.close();
     }
 }
